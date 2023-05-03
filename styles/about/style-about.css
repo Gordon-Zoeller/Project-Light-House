@@ -125,4 +125,7 @@ main section {
 }
 footer {
   background-color: rgb(112, 112, 112);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style-about.css.map */

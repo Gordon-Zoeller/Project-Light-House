@@ -185,4 +185,7 @@ main table tbody .tr2 {
 }
 footer {
   background-color: rgb(112, 112, 112);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style-ch1-1-dog.css.map */
