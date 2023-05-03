@@ -1,0 +1,58 @@
+main {
+    .bg-img {
+        background-image: url(../../images/zorn-tower.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: color-change 2s linear infinite;
+        width: 100%;
+        height: 289rem;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: 7rem 1fr 7rem;
+        width: 100%;
+        position: fixed;
+        top: 25rem;
+        .top {
+            background: linear-gradient(to top, $septenary, transparent);
+        }
+        .child-container {
+            text-align: center;
+            padding: 4rem 0 4rem 0;
+            background-color: $septenary;
+            color: $quaternary;
+            h2 {
+                padding-bottom: 2rem;
+            }
+            h1 {
+                padding-bottom: 4rem;
+                font-size: 5rem;
+            }
+            a {
+                color: $quaternary;
+                text-decoration: none;
+                border: 1px solid $quaternary;
+                padding: 0.5rem 2rem 0.5rem 2rem;
+                font-size: 2.5rem;
+                font-family: $font;
+            }
+            a:hover {
+                text-shadow: 0 0 1.5rem $quaternary;
+            }
+        }
+        .bottom {
+            background: linear-gradient(to bottom, $septenary, transparent);
+        }
+    }
+}
+@keyframes color-change {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}

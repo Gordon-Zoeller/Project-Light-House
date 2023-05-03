@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "BerkshireSwash";
+    src: url(../../fonts/BerkshireSwash-Regular.ttf);
+}
+header {
+    display: flex;
+    padding-top: 1.2rem;
+    justify-content: space-around;
+    background-color: $secondary;
+    h3 {
+        font-family: "BerkshireSwash", cursive;
+        color: $primary;
+        padding-top: 1.2rem;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        .material-symbols-outlined {
+            font-size: 5rem;
+        }
+        input,
+        nav {
+            display: none;
+        }
+        input:checked ~ nav {
+            display: block;
+            position: absolute;
+            top: 6rem;
+        }
+        label,
+        nav {
+            width: 5rem;
+        }
+        nav {
+            ul {
+                list-style: none;
+                li {
+                    margin-top: 1rem;
+                    a,
+                    a:visited,
+                    a:hover,
+                    a:active {
+                        text-decoration: none;
+                        color: $primary;
+                    }
+                    #contact {
+                        text-decoration: underline $quinary;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    header {
+        justify-content: space-around;
+        align-items: baseline;
+        h3 {
+            position: relative;
+            right: 15rem;
+        }
+        .nav {
+            margin-right: 4rem;
+            flex-direction: row;
+            .navEl {
+                display: inline-block;
+                ul {
+                    display: flex;
+                    gap: 5rem;
+                    li {
+                        font-size: 2rem;
+                        font-family: $font;
+                    }
+                }
+            }
+            label {
+                display: none;
+            }
+        }
+    }
+}

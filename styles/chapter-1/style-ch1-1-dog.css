@@ -1,0 +1,188 @@
+main .text-container p {
+  padding: 1rem;
+  color: whitesmoke;
+  font-family: monospace;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 7rem 1fr 7rem;
+}
+
+@font-face {
+  font-family: "BerkshireSwash";
+  src: url(../../fonts/BerkshireSwash-Regular.ttf);
+}
+header {
+  padding-top: 1.2rem;
+  background-color: rgb(112, 112, 112);
+}
+header h3 {
+  font-family: "BerkshireSwash", cursive;
+  color: rgb(255, 249, 0);
+  padding: 1.2rem 0 0 8.69rem;
+}
+
+@font-face {
+  font-family: "Shojumaru";
+  src: url(../../fonts/Shojumaru-Regular.ttf);
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: midnightblue;
+}
+main .text-container {
+  margin: 2rem 4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 0.2rem 0.2rem whitesmoke;
+  background-color: rgb(112, 112, 112);
+}
+main .hotel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+main .hotel-container h2 {
+  font-family: "Shojumaru", cursive;
+  font-size: 3.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 5px solid firebrick;
+  color: rgb(255, 249, 0);
+  background-color: rgb(112, 112, 112);
+}
+main .hotel-container h2 span {
+  animation: flicker 3s infinite;
+}
+main .option-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .option-1 .hover {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .option-1 .hover .trash-can {
+  font-size: 8rem;
+}
+main .option-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .option-2 a .material-symbols-outlined {
+  font-size: 8rem;
+}
+main .option-1 .material-symbols-outlined,
+main .option-2 .material-symbols-outlined {
+  color: rgb(255, 249, 0);
+  background-color: rgb(112, 112, 112);
+  border-radius: 10px;
+}
+main table {
+  margin: 0 1rem 3rem 1rem;
+  background-color: rgb(112, 112, 112);
+  border-collapse: collapse;
+  color: whitesmoke;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+main table tbody {
+  grid-row: 1/3;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+main table tbody tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main table tbody tr td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+}
+main table tbody tr td .material-symbols-outlined {
+  color: rgb(255, 249, 0);
+  font-size: 6rem;
+}
+main table tbody .tr1 {
+  grid-row: 1/2;
+}
+main table tbody .tr2 {
+  grid-row: 2/3;
+}
+
+@keyframes flicker {
+  0% {
+    color: rgb(255, 249, 0);
+  }
+  3% {
+    color: rgb(112, 112, 112);
+  }
+  49% {
+    color: rgb(112, 112, 112);
+  }
+  50% {
+    color: rgb(255, 249, 0);
+  }
+  53% {
+    color: rgb(112, 112, 112);
+  }
+  60% {
+    color: rgb(112, 112, 112);
+  }
+  61% {
+    color: rgb(255, 249, 0);
+  }
+  64% {
+    color: rgb(112, 112, 112);
+  }
+  100% {
+    color: rgb(112, 112, 112);
+  }
+}
+@media screen and (min-width: 500px) {
+  body {
+    height: 100vh;
+  }
+  body main {
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .text-container p {
+    line-height: 3rem;
+  }
+  main table {
+    margin: 0 30rem 3rem 30rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  main table {
+    margin: 0 50rem 3rem 50rem;
+  }
+}
+footer {
+  background-color: rgb(112, 112, 112);
+}/*# sourceMappingURL=style-ch1-1-dog.css.map */

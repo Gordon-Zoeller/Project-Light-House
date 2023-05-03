@@ -1,0 +1,93 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 7rem 1fr 7rem;
+}
+
+@font-face {
+  font-family: "BerkshireSwash";
+  src: url(../../fonts/BerkshireSwash-Regular.ttf);
+}
+header {
+  padding-top: 1.2rem;
+  background-color: rgb(112, 112, 112);
+}
+header h3 {
+  font-family: "BerkshireSwash", cursive;
+  color: rgb(255, 249, 0);
+  padding: 1.2rem 0 0 8.69rem;
+}
+
+main .bg-img {
+  background-image: url(../../images/zorn-tower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: color-change 2s linear infinite;
+  width: 100%;
+  height: 289rem;
+}
+main .container {
+  display: grid;
+  grid-template-rows: 7rem 1fr 7rem;
+  width: 100%;
+  position: fixed;
+  top: 25rem;
+}
+main .container .top {
+  background: linear-gradient(to top, black, transparent);
+}
+main .container .child-container {
+  text-align: center;
+  padding: 4rem 0 4rem 0;
+  background-color: black;
+  color: whitesmoke;
+}
+main .container .child-container h2 {
+  padding-bottom: 2rem;
+}
+main .container .child-container h1 {
+  padding-bottom: 4rem;
+  font-size: 5rem;
+}
+main .container .child-container a {
+  color: whitesmoke;
+  text-decoration: none;
+  border: 1px solid whitesmoke;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+}
+main .container .child-container a:hover {
+  text-shadow: 0 0 1.5rem whitesmoke;
+}
+main .container .bottom {
+  background: linear-gradient(to bottom, black, transparent);
+}
+
+@keyframes color-change {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+footer {
+  background-color: rgb(112, 112, 112);
+}/*# sourceMappingURL=style-ch1.css.map */

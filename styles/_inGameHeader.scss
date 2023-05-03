@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "BerkshireSwash";
+    src: url(../../fonts/BerkshireSwash-Regular.ttf);
+}
+header {
+    padding-top: 1.2rem;
+    background-color: $secondary;
+    h3 {
+        font-family: "BerkshireSwash", cursive;
+        color: $primary;
+        padding: 1.2rem 0 0 8.69rem;
+    }
+}

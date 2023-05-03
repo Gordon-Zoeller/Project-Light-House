@@ -1,0 +1,13 @@
+$primary: rgb(255, 249, 0);
+$secondary: rgb(112, 112, 112);
+$tertiary: midnightblue;
+$quaternary: whitesmoke;
+$quinary: firebrick;
+$senary: #ff6c00;
+$septenary: black;
+$font: sans-serif;
+%text {
+    padding: 1rem;
+    color: $quaternary;
+    font-family: monospace;
+}

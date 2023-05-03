@@ -1,0 +1,121 @@
+main section p, main section h2 {
+  padding: 1rem;
+  color: whitesmoke;
+  font-family: monospace;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 7rem 1fr 7rem;
+}
+
+@font-face {
+  font-family: "BerkshireSwash";
+  src: url(../../fonts/BerkshireSwash-Regular.ttf);
+}
+header {
+  display: flex;
+  padding-top: 1.2rem;
+  justify-content: space-around;
+  background-color: rgb(112, 112, 112);
+}
+header h3 {
+  font-family: "BerkshireSwash", cursive;
+  color: rgb(255, 249, 0);
+  padding-top: 1.2rem;
+}
+header .nav {
+  display: flex;
+  flex-direction: column;
+}
+header .nav .material-symbols-outlined {
+  font-size: 5rem;
+}
+header .nav input,
+header .nav nav {
+  display: none;
+}
+header .nav input:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 6rem;
+}
+header .nav label,
+header .nav nav {
+  width: 5rem;
+}
+header .nav nav ul {
+  list-style: none;
+}
+header .nav nav ul li {
+  margin-top: 1rem;
+}
+header .nav nav ul li a,
+header .nav nav ul li a:visited,
+header .nav nav ul li a:hover,
+header .nav nav ul li a:active {
+  text-decoration: none;
+  color: rgb(255, 249, 0);
+}
+header .nav nav ul li #contact {
+  -webkit-text-decoration: underline firebrick;
+          text-decoration: underline firebrick;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  header h3 {
+    position: relative;
+    right: 15rem;
+  }
+  header .nav {
+    margin-right: 4rem;
+    flex-direction: row;
+  }
+  header .nav .navEl {
+    display: inline-block;
+  }
+  header .nav .navEl ul {
+    display: flex;
+    gap: 5rem;
+  }
+  header .nav .navEl ul li {
+    font-size: 2rem;
+    font-family: sans-serif;
+  }
+  header .nav label {
+    display: none;
+  }
+}
+main {
+  background-color: midnightblue;
+}
+main section {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem 4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 0.2rem 0.2rem whitesmoke;
+  background-color: rgb(112, 112, 112);
+}
+footer {
+  background-color: rgb(112, 112, 112);
+}/*# sourceMappingURL=style-contact.css.map */
